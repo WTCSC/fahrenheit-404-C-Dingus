@@ -1,6 +1,8 @@
 while True:
-    system = input("temprature system? (c, f, k)");
-    temprature = input("temprature?");
+    system = input("temprature system? (c, f, k) or exit\n");
+    if system == "exit":
+        break
+    temprature = input("temprature?\n");
     try:
         temp = int(temprature)
         match system:
